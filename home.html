@@ -8,6 +8,11 @@
 		<link rel="stylesheet" href="/bootstrap.css">
 		<script src="/jquery.js"></script>
 		<script src="/angular.js"></script>
+		<style>
+		body {
+			color: green
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -77,6 +82,57 @@
 					document.getElementById("demo").innerHTML = "My First JavaScript";
 				&lt;/script&gt;
 			</pre>
+			<br>
+			<div class="jumbotron">
+				<p>
+					Old JavaScript examples may use a type attribute: &lt;script&gt; type="text/javascript"&gt;.
+					The type attribute is not required. JavaScript is the default scripting language in HTML.
+				</p>
+			</div>
+			<br>
+			<h3>JavaScript in &lt;head&gt; or &lt;body&gt;</h3>
+			<br>
+			<p>
+				You can place any number of scripts in an HTML document.
+				Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both.
+			</p>
+			<br>
+			<h3>JavaScript in &lt;head&gt;</h3>
+			<br>
+			<p>
+				In this example, a JavaScript function is placed in the &lt;head&gt; section of an HTML page.
+				The function is invoked (called) when a button is clicked:
+			</p>
+			<br>
+			<pre>
+				&lt;!DOCTYPE html&lt;
+				&lt;html&gt;
+				
+				&lt;head&gt;
+				&lt;script&gt;
+					function myFunction() {
+						document.getElementById("demo").innerHTML = "Paragraph changed";
+					}
+				&lt;/script&gt;
+				&lt;/head&gt;
+				&lt;body&gt;
+				&lt;h1&gt;A Web page&lt;/h1&gt;
+				&lt;p id="demo"&lt;A paragraph&lt;/p&gt;
+				&lt;button type="button" onclick="myFunction()"&lt;Try me&lt;/button&gt;
+				&lt;/body&gt;
+				&lt;/html&gt;
+			</pre>
+			<br>
+			<script>
+				function myFunction() {
+					document.getElementById("demo1").innerHTML = "Paragraph changed.";
+				}
+			</script>
+			<br>
+			<h1>A Web Page</h1>
+			<p id="demo1">A Paragraph</p>
+			<button type="button" onclick="myFunction()">Try it</button>
+			<br>
 			
 			
 			
