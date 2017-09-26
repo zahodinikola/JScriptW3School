@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<title>Java Script</title>
+		<link rel="stylesheet" href="/bootstrap.css">
+		<script src="/jquery.js"></script>
+		<script src="/angular.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h3><strong>My first JavaScript</strong></h3>
+			<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+				Click me to determine the current time
+			</button>
+			<p id="demo"></p>
+			<br>
+			<h3><strong>JavaScript introduction</strong></h3>
+			<br>
+			<h3>Java Script can change HTML content</h3>
+			<br>
+			<p>
+				One of many JavaScript HTML methods is getElementById().
+				This  example uses the method to "find" an HTML element (with="demo") and changes the element content
+				(<strong>innerHTML</strong>) to "Hello JavaScript":
+			</p>
+			<br>
+			<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'">
+				Change date to Hello
+			</button>
+			<br>
+			<h3>JavaScript can change HTML attributes</h3>
+			<br>
+			<p>
+				This example changes an HTML image by changing the src (source) attribute of an &lt;img&gt; tag:
+			</p>
+			<br>
+			<button type="button" onclick="document.getElementById('myImage').src = '/pic_bulbon.gif'">
+				Turn the lamp on
+			</button>
+			<img id="myImage" src="/pic_bulboff.gif" style="width: 100px">
+			<button type="button" onclick="document.getElementById('myImage').src = '/pic_bulboff.gif'">
+				Turn the bulb off
+			</button>
+			<br>
+			<h3 id="demoStyle">JavaScript can change HTML styles (CSS)</h3>
+			<br>
+			<button type="button" onclick="document.getElementById('demoStyle').style.fontSize = '35px'">
+				Change font size
+			</button>
+			<br>
+			<h3>JavaScript can hide HTML elements</h3>
+			<br>
+			<div class="caret"><span></span></div>
+			<h3 id="demoHide">Hide me</h3>
+			<br>
+			<button type="button" onclick="document.getElementById('demoHide').style.display = 'none'">
+				Push to hide
+			</button>
+			<br>
+			<h3>JavaScript can show HTML elements</h3>
+			<br>
+			<button type="button" onclick="document.getElementById('demoHide').style.display = 'block'">
+				Push to show
+			</button>
+			<br>
+			<h3>Where to</h3>
+			<br>
+			<p>
+				In HTML, JavaScript code must be inserted between &lt;script&gt; and &lt;/script&gt; tags.
+			</p>
+			<br>
+			<pre>
+				&lt;script&gt;
+					document.getElementById("demo").innerHTML = "My First JavaScript";
+				&lt;/script&gt;
+			</pre>
+			
+			
+			
+			
+		</div>
+	</body>
+</html>
+	
