@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<title>Java Script</title>
+		<link rel="stylesheet" href="/bootstrap.css">
+		<script src="/jquery.js"></script>
+		<script src="/angular.js"></script>
+		<style>
+		body {
+			color: violet
+			}
+		.jumbotron {
+			color: magenta
+			}
+		.note {
+			background-color: lightyellow;
+			color: black;
+			padding: 16px;
+			border-left: 6px solid yellow;
+		}
+		.example {
+			background-color: lightgray;
+			padding: 16px;
+			color: black;
+			border-radius: 5px;
+			font-size: 1.75;
+			}
+		.example-section {
+			background-color: white;
+			border-radius: 0px;
+			font-size: 1;
+			}
+		.example-info {
+			border-left: 6px solid cyan;
+		}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		
+			<h3><strong>JavaScript display possibilities</strong></h3>
+			<br>
+			<p>
+				JavaScript can display data in different ways:
+			</p>
+			<br>
+			<ul>
+				<li>Writing into an HTML element, using <strong>innerHTML.</strong></li>
+				<li>Writing into the HTML output using <strong>document.write()</strong></li>
+				<li>Writing into an alert box, using <strong>window.alert().</strong></li>
+				<li>Writing into the browser console, using <strong>console.log()</strong></li>
+			</ul>
+			<br>
+			<h3>Using innerHTML</h3>
+			<br>
+			<p>
+				To access an HTML element, JavaScript can use the <strong>document.getElementById(id)</strong> method.
+				The <strong>id</strong> attribute defines the HTML element. The <strong>innerHTML</strong> property defines
+				the HTML content:
+			</p>
+			
+			<div class="example">
+				<br>
+				<h4>Example</h4>
+				<br>
+				<div class="example example-section example-info">
+				&lt;!DOCTYPE&gt;<br>
+				&lt;html&gt;<br>
+				&lt;body&gt;<br>
+				<br>
+				&lt;h1&gt;My first page&lt;/&gt;<br>
+				&lt;p&gt;My first paragraph&lt;/&gt;<br>
+				<br>
+				&lt;p id="demo"&gt;&lt;/p&gt;<br>
+				<br>
+				&lt;script&gt;<br>
+				document.getElementById("demo").innerHTML = 5 + 6;<br>
+				&lt;/script&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+				</div>
+				<br>
+				<button class="btn btn-info" style="width: 100px">Press</button>
+			</div>
+			<br>
+			<p class="note">
+				Changing the innerHTML property of an HTML element is a common way to diplay data in HTML.
+			</p>
+			<br>
+			<h3>Using document.write()</h3>
+			<br>
+			<p>
+				For testing purposes it is convinient to use <strong>document.write().</strong>
+			</p>
+			<div class="example">
+				<h4>Example</h4>
+				<div class="example example-section example-info">
+					&lt;!DOCTYPE&gt;<br>
+					&lt;html&gt;<br>
+					&lt;body&gt;<br>
+					<br>
+					&lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+					&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+					<br>
+					&lt;script&gt;
+					document.write(5+6);
+					&lt;/script&gt;
+					
+					&lt;/body&gt;
+					&lt;/html&gt;
+				</div>
+			</div>
+			<br>
+			<p class="note">
+				Using document.write() after an HTML document is fully loaded, will <strong>delete all existing HTML:</strong>
+			</p>
+			<br>
+			<div class="example example-section example-info">
+			
+			</div>
+		</div>
+	</body>
+</html>
+	

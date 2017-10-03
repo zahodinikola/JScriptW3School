@@ -12,6 +12,9 @@
 		body {
 			color: green
 			}
+		.jumbotron {
+			color: red
+			}
 		</style>
 	</head>
 	<body>
@@ -133,6 +136,144 @@
 			<p id="demo1">A Paragraph</p>
 			<button type="button" onclick="myFunction()">Try it</button>
 			<br>
+			<h3>
+				JavaScript in &lt;body&gt;
+			</h3>
+			<br>
+			<p>
+				In this example, a JavaScript function is placed in the &lt;body&gt; section of an HTML page.
+				The function is invoced (called) when a button is clicked:
+			</p>
+			<br>
+			<h4>Example</h4>
+			<br>
+			<pre>
+				&lt;!DOCTYPE&gt;
+				&lt;html&gt;
+				&lt;body&gt;
+					&lt;h1&gt;A Web page&lt;/h1&gt;
+					&lt;p id="demo"&gt;A paragraph&lt;/p&gt;
+					&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+					
+					&lt;script&gt;
+						function myFunction2() {
+							document.getElementById("demo2").innerHTML = "Paragraph changed";
+						}
+					&lt;/script&gt;
+				&lt;/body&gt;
+				&lt;/html&gt;
+			</pre>
+			<br>
+			<div class="jumbotron">
+				<p>
+					Placing scripts at the bottom of the &lt;body&gt; element improves the display speed, because script
+					compilation slows down the display.
+				</p>
+			</div>
+			<br>
+			<h3>External JavaScript</h3>
+			<br>
+			<p>
+				Scripts can also be placed in external files:
+			</p>
+			<div class="jumbotron">
+				<h4>External file: myScript.js</h4>
+				<pre>
+					function myFunction() {
+						document.getElementById("demo3").innerHTML = "Paragraph changed";
+					}
+				</pre>
+			</div>
+			<br>		
+			<p>
+				External scripts are practical when the same code is used in many different web pages.
+				JavaScript files have the file extension <strong>js.</strong>
+				To use an external script, put the name of the script file in the src (source) attribute of a 
+				&lt;script&gt; tag:
+			</p>
+			<br>
+			<h4>Example</h4>
+			<pre>
+				&lt;!DOCTYPE&gt;
+				&lt;html&gt;
+				&lt;body&gt;
+					&lt;script src="myScript.js"&gt;&lt;/script&lt;
+				&lt;/body&gt;
+				&lt;/html&gt;
+			</pre>
+			<br>
+			<p>
+				You can place an external script reference in &lt;head&gt; or &lt;body&gt; as you like.
+				The script will behave as if it was located exactly where the &lt;script&gt; tag is located.
+			</p>
+			<br>
+			<div class="jumbotron">
+				External scripts cannot contain &lt;script&gt; tags.
+			</div>
+			<br>
+			<h3>External JavaScript advantages</h3>
+			<br>
+			<p>
+				Placing scripts in external files has some advantages:
+				<ul>
+					<li>It sepatates HTML and code</li>
+					<li>It makes HTML and JavaScript easier to read and maintain</li>
+					<li>Cached JavaScript files can speed up page loads</li>
+				</ul>
+			</p>
+			<br>
+			<p>
+				To add several script files to one page - use several script tags:
+			</p>
+			<br>
+			<h4>Example</h4>
+			<br>
+			<pre>
+				&lt;script src="myScript1.js"&gt;&lt;/script&gt;
+				&lt;script src="myScript2.js"&gt;&lt;/script&gt;
+			</pre>
+			<br>
+			<h3>External references</h3>
+			<br>
+			<p>
+				External scripts can be referenced with a full URL or with a path  relative to the cuttent web page.
+				This example uses a full URL to link to a script:
+			</p>
+			<br>
+			<br>
+			<div class="jumbotron">
+				<h4 style="color: black">Example</h4>
+				<p>
+					&lt;script src="https://www.w3schools.com/js/myScript1.js"&gt;&lt;/script&gt;
+				</p>	
+				<button class="btn btn-success">Try it youself</button>
+			</div>
+			<br>
+			<p>
+				This example uses a script located in a specified folder on the current web site:
+			</p>
+			<br>
+			<div class="jumbotron">
+				<h4 style="color: black">Example</h4>
+				<p>
+					&lt;script src="/js/myScript1.js"&gt;&lt;/script&gt;
+				</p>
+				<button type="button" class="btn btn-success">Try it yourself</button>
+			</div>
+			<br>
+			<p>
+				This example links to a script located in the same folder as the current page:
+			</p>
+			<br>
+			<div class="jumbotron">
+				<h4 style="color: black">Example</h4>
+				<p>
+					&lt;script src="myScript1.js"&gt;&lt;/script&gt;
+				</p>
+				<button type="button" class="btn btn-danger">Beware!</button>
+			</div>
+			<br>
+			
 			
 			
 			
